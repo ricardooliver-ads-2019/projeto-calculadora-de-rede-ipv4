@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de rede para IPV4</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1> Calculadora de rede para IPV4</h1>
+        <hr>
+    </header>
+    <main class="container">
+        <section>
+            <!--<h2>Digite o número de IPV4 para ser calculado</h2>-->
+            <div class="boxIp">
+                <form action="">
+                    <p>IPV4</p>
+                    <input id="ip" type="text" placeholder="192.168.1.0/21" value="172.192.168.10/22">
+                    <br>
+                    <br>
+        
+                    
+                </form>
+                <button id="calc">Calcular</button>
+               <div id="result">
+                    <div class="box-res">
+                        <p>Mascara</p>
+                        <span id="mascara">255.0.0.0/8</span>
+                    </div>
+
+                    <div class="box-res">
+                        <p>Números de Ip validos</p>
+                        <span id="nums-ip-validos">16832</span>
+                    </div>
+                    <br>
+                    <div class="box-res">
+                        <p>Rede inicial</p>
+                        <span id="rede-inic">10.0.0.0</span>
+                    </div>
+                    <div class="box-res">
+                        <p>Broadcast</p>
+                        <span id="broadcast">10.255.255.255</span>
+                    </div>
+               </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>rodape</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
