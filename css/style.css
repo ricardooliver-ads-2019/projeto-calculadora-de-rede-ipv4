@@ -133,7 +133,9 @@ footer div{
 
 
     .box-res{    
-        margin: 8px 5px;  
+        margin: 8px 5px;
+        width: 250px;
+        height: 80px;  
         
     }
 
