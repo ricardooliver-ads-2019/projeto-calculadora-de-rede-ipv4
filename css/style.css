@@ -125,10 +125,30 @@ footer div{
        
     }
 
+    .boxIp input#ip{
+        width: 80%;
+        max-width: 250px;
+        min-width: 200px;
+        font-size: 18px;
+        font-weight: bolder;
+    }
+    
+    button#calc{
+        width: 70%;
+        max-width: 170px;
+        min-width: 150px;
+        cursor: pointer;
+        font-weight: bolder;
+        color: var(--cor-de-font);
+        padding: 3px 30px;
+        box-shadow: 0px 0px 10px 5px;
+        background-color: rgba(184, 184, 184, 0.384);
+    }
+
 
     div#result{
         margin: 25px 0;
-        border: 2px dashed var(--cor-de-font);
+        border: 0;
     
     }
 
