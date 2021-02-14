@@ -15,33 +15,33 @@
         <section>
             <!--<h2>Digite o número de IPV4 para ser calculado</h2>-->
             <div class="boxIp">
-                <form action="">
+                <form action="" onsubmit="Form.submit(event)">
                     <p>IPV4</p>
-                    <input id="ip" type="text" placeholder="192.168.1.0/21" value="172.168.10.10/22">
+                    <input id="ip" type="text" placeholder="192.168.1.0/21">
                     <br>
                     <br>
         
-                    
+                    <button id="calc">Calcular</button>
                 </form>
-                <button id="calc">Calcular</button>
+                
                <div id="result">
                     <div class="box-res">
                         <p>Mascara</p>
-                        <span id="mascara">255.0.0.0/8</span>
+                        <span id="mascara">255.255.248.0/21</span>
                     </div>
 
                     <div class="box-res">
                         <p>Números de Ip validos</p>
-                        <span id="nums-ip-validos">16832</span>
+                        <span id="nums-ip-validos">2044</span>
                     </div>
                     <br>
                     <div class="box-res">
                         <p>Rede inicial</p>
-                        <span id="rede-inic">10.0.0.0</span>
+                        <span id="rede-inic">192.168.0.0</span>
                     </div>
                     <div class="box-res">
                         <p>Broadcast</p>
-                        <span id="broadcast">10.255.255.255</span>
+                        <span id="broadcast">192.168.7.255</span>
                     </div>
                </div>
             </div>
