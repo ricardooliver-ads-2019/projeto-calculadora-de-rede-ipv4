@@ -50,6 +50,13 @@ section p{
     font-size: 18px;
 }
 
+.caixa{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
 .boxIp input#ip{
     width: 80%;
     max-width: 250px;
@@ -59,6 +66,25 @@ section p{
     text-align: center;
     padding: 5px;
     border-radius: 20px;
+
+}
+
+.ipIn{
+    
+    position: relative;
+    text-align: center;
+    width: 50px;
+    height: 30px;
+    font-size: 18px;
+  
+}
+form .format{
+    display: inline;
+    padding: 0 2px;
+    bottom: 0;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
 
 }
 

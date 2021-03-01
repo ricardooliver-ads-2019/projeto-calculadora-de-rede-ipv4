@@ -1,12 +1,23 @@
 
+
+
 const Form = {
 
-    ip: document.querySelector("input#ip"),
     
+    //ip: document.querySelector("input#ip"),
+    ipBox1 : document.getElementById("ipBox1"),
+    ipBox2 : document.getElementById("ipBox2"),
+    ipBox3 : document.getElementById("ipBox3"),
+    ipBox4 : document.getElementById("ipBox4"),
+    masBox : document.getElementById("masBox"),
+
+
+    
+    ip: `${ipBox1.value}.${ipBox2.value}.${ipBox3.value}.${ipBox4.value}/${masBox.value}`,
 
     getValues(){
         return {
-            ip: Form.ip.value
+            ip: Form.ip
             
         }
     },
@@ -278,6 +289,15 @@ const Functs = {
 
 
 function startt() {
+
+    console.log(Form.getValues())
+    /*var ipBox1 = Number(document.getElementById("ipBox1").value)
+    var ipBox2 = Number(document.getElementById("ipBox2").value)
+    var ipBox3 = Number(document.getElementById("ipBox3").value)
+    var ipBox4 = Number(document.getElementById("ipBox4").value)
+    var masBox = Number(document.getElementById("masBox").value)*/
+
+    //console.log(ipBox1, ipBox2, ipBox3, ipBox4, masBox)
     const mas = Form.formatMascara()
     const arrayIp = Form.formatIpNumber()
     const arrymascara = Functs.descobrirMascaraDeSub_Rede(Form.formatMascara())
