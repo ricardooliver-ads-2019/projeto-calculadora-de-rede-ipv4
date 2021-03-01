@@ -20,15 +20,15 @@
                 <form action="" onsubmit="Form.submit(event)">
                     <p id="p">IPV4</p>
                     <div class="caixa">
-                        <input type="number" class="ipIn" min="0" max="255" value="10" id="ipBox1" required>
+                        <input type="number" class="ipIn" min="0" max="255" value="192" id="ipBox1" required>
                         <div class="format">.</div>
-                        <input type="number" class="ipIn" min="0" max="255" value="0" id="ipBox2" required>
+                        <input type="number" class="ipIn" min="0" max="255" value="168" id="ipBox2" required>
                         <div class="format">.</div>
-                        <input type="number" class="ipIn" min="0" max="255" value="0" id="ipBox3" required>
+                        <input type="number" class="ipIn" min="0" max="255" value="10" id="ipBox3" required>
                         <div class="format">.</div>
-                        <input type="number" class="ipIn" min="0" max="255" value="0" id="ipBox4" required>
+                        <input type="number" class="ipIn" min="0" max="255" value="1" id="ipBox4" required>
                         <div class="format">/</div>
-                        <input type="number" class="ipIn" min="1" max="32" value="14" id="masBox" required title="A Máscara deve ser preencida com um valor entre 1 e 32, correspondente aos bits da rede">
+                        <input type="number" class="ipIn" min="1" max="32" value="17" id="masBox" required title="A Máscara deve ser preencida com um valor entre 1 e 32, correspondente aos bits da rede">
                     </div>
                     <br>
                     <br>
@@ -39,12 +39,12 @@
                <div id="result">
                     <div class="box-res">
                         <p>Máscara</p>
-                        <span id="mascara">255.255.248.0/21</span>
+                        <span id="mascara">255.255.128.0/17</span>
                     </div>
 
                     <div class="box-res">
                         <p>Números de Ip válidos</p>
-                        <span id="nums-ip-validos">2044</span>
+                        <span id="nums-ip-validos">32766</span>
                     </div>
                     <br>
                     <div class="box-res">
@@ -53,7 +53,7 @@
                     </div>
                     <div class="box-res">
                         <p>Broadcast</p>
-                        <span id="broadcast">192.168.7.255</span>
+                        <span id="broadcast">192.168.127.255</span>
                     </div>
                </div>
             </div>
