@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de rede para IPV4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
     <header>
@@ -16,20 +18,17 @@
             <!--<h2>Digite o número de IPV4 para ser calculado</h2>-->
             <div class="boxIp">
                 <form action="" onsubmit="Form.submit(event)">
-                    <p>IPV4</p>
-                    <input id="ip" type="text" placeholder="192.168.1.0/21">
-                    <br>
-                    <br>
+                    <p id="p">IPV4</p>
                     <div class="caixa">
-                        <input type="number" class="ipIn" min="0" max="255" value="10" id="ipBox1">
+                        <input type="number" class="ipIn" min="0" max="255" value="10" id="ipBox1" required>
                         <div class="format">.</div>
-                        <input type="number" class="ipIn" min="0" max="255" value="0" id="ipBox2">
+                        <input type="number" class="ipIn" min="0" max="255" value="0" id="ipBox2" required>
                         <div class="format">.</div>
-                        <input type="number" class="ipIn" min="0" max="255" value="0" id="ipBox3">
+                        <input type="number" class="ipIn" min="0" max="255" value="0" id="ipBox3" required>
                         <div class="format">.</div>
-                        <input type="number" class="ipIn" min="0" max="255" value="0" id="ipBox4">
+                        <input type="number" class="ipIn" min="0" max="255" value="0" id="ipBox4" required>
                         <div class="format">/</div>
-                        <input type="number" class="ipIn" min="0" max="32" value="14" id="masBox">
+                        <input type="number" class="ipIn" min="1" max="32" value="14" id="masBox" required title="A Máscara deve ser preencida com um valor entre 1 e 32, correspondente aos bits da rede">
                     </div>
                     <br>
                     <br>
@@ -39,12 +38,12 @@
                 
                <div id="result">
                     <div class="box-res">
-                        <p>Mascara</p>
+                        <p>Máscara</p>
                         <span id="mascara">255.255.248.0/21</span>
                     </div>
 
                     <div class="box-res">
-                        <p>Números de Ip validos</p>
+                        <p>Números de Ip válidos</p>
                         <span id="nums-ip-validos">2044</span>
                     </div>
                     <br>
